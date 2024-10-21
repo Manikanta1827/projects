@@ -1,0 +1,31 @@
+body {
+    background-color: #ffffff; /* White background */
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #000000; /* Black calculator background */
+}
+
+input {
+    background-color: #000000; /* Black input background */
+    color: #ffffff; /* White input text */
+    border: none;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    height: 60px;
+    font-size: 1.5em;
+    color: #ffffff; /* White button text */
+    background-color: #333333; /* Dark button background */
+}
+
+.btn:hover {
+    background-color: #444444; /* Darker on hover */
+}

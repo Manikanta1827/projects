@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="text-center text-white">Calculator</h4>
+                        <input type="text" id="result" class="form-control mb-3" disabled>
+                        <div class="button-grid">
+                            <button class="btn btn-light" onclick="clearResult()">AC</button>
+                            <button class="btn btn-light" onclick="appendToResult('%')">%</button>
+                            <button class="btn btn-light" onclick="appendToResult('/')">/</button>
+                            <button class="btn btn-light" onclick="appendToResult('*')">*</button>
+                            <button class="btn btn-light" onclick="appendToResult('7')">7</button>
+                            <button class="btn btn-light" onclick="appendToResult('8')">8</button>
+                            <button class="btn btn-light" onclick="appendToResult('9')">9</button>
+                            <button class="btn btn-light" onclick="appendToResult('-')">-</button>
+                            <button class="btn btn-light" onclick="appendToResult('4')">4</button>
+                            <button class="btn btn-light" onclick="appendToResult('5')">5</button>
+                            <button class="btn btn-light" onclick="appendToResult('6')">6</button>
+                            <button class="btn btn-light" onclick="appendToResult('+')">+</button>
+                            <button class="btn btn-light" onclick="appendToResult('1')">1</button>
+                            <button class="btn btn-light" onclick="appendToResult('2')">2</button>
+                            <button class="btn btn-light" onclick="appendToResult('3')">3</button>
+                            <button class="btn btn-light" onclick="calculateSquare()">x²</button>
+                            <button class="btn btn-light" onclick="appendToResult('0')">0</button>
+                            <button class="btn btn-light" onclick="appendToResult('.')">.</button>
+                            <button class="btn btn-light" onclick="calculate()">=</button>
+                            <button class="btn btn-light" onclick="calculatePower()">x^y</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
